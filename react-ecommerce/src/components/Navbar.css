@@ -1,0 +1,10 @@
+.navBarHP {
+  background-color: #0f0f0f;
+  color: #c39a1c ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid #641e1e;
+  gap: 20px;
+  width:1000px;
+}
