@@ -1,16 +1,29 @@
+import harryPotterCharacters from "../data/data.js";
+import getData from "../data/mockAPIService.js";
 import Item from "./Item";
 
 function ItemListContainer(props){
+    console.log(harryPotterCharacters)
+    getData()
+    .then( (data) => console.log("datos recibidos", data))
+    .catch()
+    
     return(
-        <section>
-            <h3>{props.greeting}</h3>
+        <section className="itemList">
+            <h3>{props.greeting}</h3>      
             {
-                // characters.map( character => 
-                // <Item
-                //     name = {Item.name}
-                //     date = {Item.date}
-                //     image = {Item.image} />
-                // )
+                harryPotterCharacters.map( item => 
+                <div>
+                <Item
+                    name = {item.name}
+                    image = {item.image}
+                    house = {item.house}
+                    profession = {item.profession}
+                    price = {item.price}
+                     />
+                     <br></br>
+                     </div>
+                )
             }
         </section>
     )

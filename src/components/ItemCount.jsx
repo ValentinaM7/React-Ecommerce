@@ -23,10 +23,12 @@ function ItemCount (){
     }
 
     return(
-        <div>
-            <button onClick={substract}>-</button>
-            <p>{ count }</p>
-            <button onClick={add}>+</button>
+        <div >
+            <div className="buttonsAdd" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <button onClick={substract}>-</button>
+                <p>{ count }</p>
+                <button onClick={add}>+</button>
+            </div>
             {
             limit ? <p> The Ministry of Magic does not allow you to have more than 3 of the same kind </p> : <p> </p>
             }

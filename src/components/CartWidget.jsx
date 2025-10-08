@@ -1,5 +1,5 @@
 function CartWidget(){
-    return <div  >⌁</div>
+    return <div style={{fontSize: "50px"}} >⌁</div>
 }
 
 export default CartWidget;
