@@ -32,7 +32,7 @@ const harryPotterCharacters = [
     profession: "Director de Hogwarts",
     price: 300,
     favoriteSpell: "Fawkes Flame",
-    image: "https://static.wikia.nocookie.net/harrypotter/images/7/75/Albus_Dumbledore_%28HBPF_promo%29.jpg/revision/latest?cb=20150822232849",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760136922/AlbusDumbledore_WB_F6_DumbledoreSittingInChair_Promo_080615_Port_uzkhfb.jpg",
     description: "Sabio mago y mentor de Harry, poseedor de la Varita de Saúco."
   },
   {
@@ -158,7 +158,7 @@ const harryPotterCharacters = [
     profession: "Ama de casa",
     price: 90,
     favoriteSpell: "Mending Charm",
-    image: "https://ik.imagekit.io/hpapi/molly.jpg",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137024/download_ez9adn.jpg",
     description: "Madre protectora y feroz cuando sus hijos están en peligro."
   },
   {
@@ -194,7 +194,7 @@ const harryPotterCharacters = [
     profession: "Embajadora mágica",
     price: 150,
     favoriteSpell: "Charm de Encanto Veela",
-    image: "https://ik.imagekit.io/hpapi/fleur.jpg",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137056/EOGwCTTmMyfW1HbCtxUDMb2q3fJmWJWgpsIB4DWx7bJtjOHi2bOPMCUPB8Mac_gdnL0ETDGvSi5RSMgJHW7IJg_ygye2x.webp",
     description: "Valiente y encantadora, representante de Francia en el Torneo de los Tres Magos."
   },
   {
@@ -203,7 +203,7 @@ const harryPotterCharacters = [
     profession: "Auror",
     price: 160,
     favoriteSpell: "Metamorfosis",
-    image: "https://ik.imagekit.io/hpapi/tonks.jpg",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137186/Nymphadora_Tonks_fgtkvr.webp",
     description: "Cambiante y divertida, esposa de Remus Lupin."
   },
   {
@@ -221,7 +221,7 @@ const harryPotterCharacters = [
     profession: "Elfo libre",
     price: 100,
     favoriteSpell: "Apparate",
-    image: "https://ik.imagekit.io/hpapi/dobby.jpg",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137229/DobbyDH_dhbpmn.webp",
     description: "Leal y valiente, sacrificó su vida por la libertad."
   },
   {
@@ -230,7 +230,7 @@ const harryPotterCharacters = [
     profession: "Mortífago",
     price: 60,
     favoriteSpell: "Animagus Transformation",
-    image: "https://ik.imagekit.io/hpapi/pettigrew.jpg",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137275/Peter_Pettigrew_dsq0bu.webp",
     description: "Traidor de sus amigos, vivió como rata por años."
   },
   {
@@ -248,7 +248,7 @@ const harryPotterCharacters = [
     profession: "Auror",
     price: 190,
     favoriteSpell: "Constant Vigilance",
-    image: "https://ik.imagekit.io/hpapi/moody.jpg",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137322/iH7sigY5eE_1VJl1PgZgOUto_pvtstZyI0NOeH2icRs_mcni7f.webp",
     description: "Paranoico pero legendario cazador de magos oscuros."
   },
   {
@@ -257,7 +257,7 @@ const harryPotterCharacters = [
     profession: "Autor y profesor",
     price: 95,
     favoriteSpell: "Obliviate",
-    image: "https://ik.imagekit.io/hpapi/lockhart.jpg",
+    image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137365/Gilderoy_Lockhart_promotional_image_COSF_rz2m07.webp",
     description: "Vanidoso escritor de hazañas robadas."
   },
   {

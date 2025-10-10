@@ -1,0 +1,10 @@
+.ListOfCharacters{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    height: 40px;
+}
+
+.Item{
+    color: black;
+}

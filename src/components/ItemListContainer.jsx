@@ -1,16 +1,23 @@
-import harryPotterCharacters from "../data/data.js";
+// import harryPotterCharacters from "../data/data.js";
 import getData from "../data/mockAPIService.js";
 import Item from "./Item";
+import "./itemListContainer.css";
+import { useState, useEffect } from "react";
 
 function ItemListContainer(props){
-    console.log(harryPotterCharacters)
-    getData()
-    .then( (data) => console.log("datos recibidos", data))
-    .catch()
+    const [harryPotterCharacters, setharryPotterCharacters] = useState([])
+    useEffect(() =>{
+        getData() //simula el fetch
+        .then( (data) => {
+        console.log("datos recibidos", data)
+        setharryPotterCharacters(data)})
+    .catch()}, [])
+    
     
     return(
         <section className="itemList">
-            <h3>{props.greeting}</h3>      
+            <h3>{props.greeting}</h3>
+            <div className="ListOfCharacters">      
             {
                 harryPotterCharacters.map( item => 
                 <div>
@@ -21,10 +28,10 @@ function ItemListContainer(props){
                     profession = {item.profession}
                     price = {item.price}
                      />
-                     <br></br>
                      </div>
                 )
             }
+            </div>
         </section>
     )
 }

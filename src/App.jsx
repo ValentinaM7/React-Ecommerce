@@ -10,11 +10,11 @@ function App() {
   <>
     <NavBar/>
     <div>
-      <h1>Wingardium Leviosa</h1>
+      <h1>It´s LeviOsa,  not LeviosA</h1>
       <p>A world to be enchanted</p>
     </div>
     <ItemListContainer greeting= "Choose your character to begin this journey"/>
-    <ItemCount/>
+    
   </>
   )
 }
