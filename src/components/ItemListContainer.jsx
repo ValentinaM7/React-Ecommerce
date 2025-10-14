@@ -1,17 +1,25 @@
 // import harryPotterCharacters from "../data/data.js";
-import getData from "../data/mockAPIService.js";
+import getData, { getProductsByHouse } from "../data/mockAPIService.js";
 import Item from "./Item";
 import "./itemListContainer.css";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router";
 
 function ItemListContainer(props){
     const [harryPotterCharacters, setharryPotterCharacters] = useState([])
+    const {houseParam} = useParams();
+
     useEffect(() =>{
-        getData() //simula el fetch
+        if (houseParam) {
+            getProductsByHouse (houseParam)
+            .then ( (data) => setharryPotterCharacters(data))
+        }else{
+            getData() //simula el fetch
         .then( (data) => {
         console.log("datos recibidos", data)
         setharryPotterCharacters(data)})
-    .catch()}, [])
+        }
+    }, [houseParam])
     
     
     return(
@@ -20,15 +28,11 @@ function ItemListContainer(props){
             <div className="ListOfCharacters">      
             {
                 harryPotterCharacters.map( item => 
-                <div>
+                <div key={item.id}>
                 <Item
-                    name = {item.name}
-                    image = {item.image}
-                    house = {item.house}
-                    profession = {item.profession}
-                    price = {item.price}
-                     />
-                     </div>
+                    { ...item}
+                    />
+                </div>
                 )
             }
             </div>

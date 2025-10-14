@@ -1,274 +1,307 @@
-const harryPotterCharacters = [
+const harryPotterCharacters = 
+ [
   {
+    id: 1,
     name: "Harry Potter",
     house: "Gryffindor",
     profession: "Auror",
-    price: 150,
+    price: "$150",
     favoriteSpell: "Expelliarmus",
     image: "https://ik.imagekit.io/hpapi/harry.jpg",
-    description: "El niño que vivió. Famoso por derrotar a Voldemort siendo un bebé."
+    description: "The boy who lived. Famous for defeating Voldemort as a baby."
   },
   {
+    id: 2,
     name: "Hermione Granger",
     house: "Gryffindor",
-    profession: "Ministra de Magia",
-    price: 180,
+    profession: "Minister of Magic",
+    price: "$180",
     favoriteSpell: "Alohomora",
     image: "https://ik.imagekit.io/hpapi/hermione.jpeg",
-    description: "La bruja más brillante de su generación, defensora de los elfos domésticos."
+    description: "The brightest witch of her age, defender of house-elves."
   },
   {
+    id: 3,
     name: "Ron Weasley",
     house: "Gryffindor",
     profession: "Auror",
-    price: 120,
+    price: "$120",
     favoriteSpell: "Wingardium Leviosa",
     image: "https://ik.imagekit.io/hpapi/ron.jpg",
-    description: "Leal amigo de Harry, amante del ajedrez mágico y las bromas."
+    description: "Harry’s loyal friend, lover of wizard chess and pranks."
   },
   {
+    id: 4,
     name: "Albus Dumbledore",
     house: "Gryffindor",
-    profession: "Director de Hogwarts",
-    price: 300,
+    profession: "Headmaster of Hogwarts",
+    price: "$300",
     favoriteSpell: "Fawkes Flame",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760136922/AlbusDumbledore_WB_F6_DumbledoreSittingInChair_Promo_080615_Port_uzkhfb.jpg",
-    description: "Sabio mago y mentor de Harry, poseedor de la Varita de Saúco."
+    description: "Wise wizard and Harry’s mentor, wielder of the Elder Wand."
   },
   {
+    id: 5,
     name: "Severus Snape",
     house: "Slytherin",
-    profession: "Profesor de Pociones",
-    price: 200,
+    profession: "Potions Master",
+    price: "$200",
     favoriteSpell: "Sectumsempra",
     image: "https://ik.imagekit.io/hpapi/snape.jpg",
-    description: "Un héroe en las sombras, de lealtad compleja y amor eterno."
+    description: "A hero in the shadows, with complex loyalty and eternal love."
   },
   {
+    id: 6,
     name: "Draco Malfoy",
     house: "Slytherin",
-    profession: "Empresario",
-    price: 130,
+    profession: "Businessman",
+    price: "$130",
     favoriteSpell: "Serpensortia",
     image: "https://ik.imagekit.io/hpapi/draco.jpg",
-    description: "Heredero de una familia noble, con un destino lleno de dilemas morales."
+    description: "Heir to a noble family, with a fate full of moral dilemmas."
   },
   {
+    id: 7,
     name: "Luna Lovegood",
     house: "Ravenclaw",
-    profession: "Naturalista mágica",
-    price: 160,
+    profession: "Magical Naturalist",
+    price: "$160",
     favoriteSpell: "Riddikulus",
     image: "https://ik.imagekit.io/hpapi/luna.jpg",
-    description: "Excéntrica y sabia, ve lo invisible y cree en lo imposible."
+    description: "Eccentric and wise, she sees the unseen and believes the impossible."
   },
   {
+    id: 8,
     name: "Neville Longbottom",
     house: "Gryffindor",
-    profession: "Profesor de Herbología",
-    price: 110,
+    profession: "Herbology Professor",
+    price: "$110",
     favoriteSpell: "Herbivicus",
     image: "https://ik.imagekit.io/hpapi/neville.jpg",
-    description: "Valiente y humilde, amante de las plantas mágicas."
+    description: "Brave and humble, a true lover of magical plants."
   },
   {
+    id: 9,
     name: "Sirius Black",
     house: "Gryffindor",
-    profession: "Miembro de la Orden del Fénix",
-    price: 190,
+    profession: "Member of the Order of the Phoenix",
+    price: "$190",
     favoriteSpell: "Animagus Transformation",
     image: "https://ik.imagekit.io/hpapi/sirius.JPG",
-    description: "El padrino de Harry, rebelde y fiel hasta el final."
+    description: "Harry’s godfather, rebellious and loyal to the end."
   },
   {
+    id: 10,
     name: "Remus Lupin",
     house: "Gryffindor",
-    profession: "Profesor de Defensa Contra las Artes Oscuras",
-    price: 170,
+    profession: "Defense Against the Dark Arts Professor",
+    price: "$170",
     favoriteSpell: "Expecto Patronum",
     image: "https://ik.imagekit.io/hpapi/lupin.jpg",
-    description: "Un hombre sabio y bondadoso, que lucha contra su propia naturaleza."
+    description: "A wise and kind man, battling his own nature."
   },
   {
+    id: 11,
     name: "Minerva McGonagall",
     house: "Gryffindor",
-    profession: "Directora de Hogwarts",
-    price: 210,
+    profession: "Headmistress of Hogwarts",
+    price: "$210",
     favoriteSpell: "Transfiguration",
     image: "https://ik.imagekit.io/hpapi/mcgonagall.jpg",
-    description: "Rígida pero justa, experta en transformaciones y líder ejemplar."
+    description: "Strict but fair, expert in transformations and exemplary leader."
   },
   {
+    id: 12,
     name: "Rubeus Hagrid",
     house: "Gryffindor",
-    profession: "Guardián de las Llaves y Terrenos",
-    price: 100,
+    profession: "Keeper of Keys and Grounds",
+    price: "$100",
     favoriteSpell: "Engorgio",
     image: "https://ik.imagekit.io/hpapi/hagrid.png",
-    description: "Amante de las criaturas mágicas y gran amigo de Harry."
+    description: "Lover of magical creatures and a great friend to Harry."
   },
   {
+    id: 13,
     name: "Ginny Weasley",
     house: "Gryffindor",
-    profession: "Jugadora de Quidditch",
-    price: 130,
+    profession: "Quidditch Player",
+    price: "$130",
     favoriteSpell: "Reducto",
     image: "https://ik.imagekit.io/hpapi/ginny.jpg",
-    description: "Fuerte, valiente y talentosa con la escoba."
+    description: "Strong, brave, and talented on a broom."
   },
   {
+    id: 14,
     name: "Bellatrix Lestrange",
     house: "Slytherin",
-    profession: "Mortífaga",
-    price: 220,
+    profession: "Death Eater",
+    price: "$220",
     favoriteSpell: "Crucio",
     image: "https://ik.imagekit.io/hpapi/bellatrix.jpg",
-    description: "Fiel seguidora de Voldemort, tan peligrosa como impredecible."
+    description: "A devoted follower of Voldemort, dangerous and unpredictable."
   },
   {
+    id: 15,
     name: "Lord Voldemort",
     house: "Slytherin",
-    profession: "Oscuro Señor",
-    price: 400,
+    profession: "Dark Lord",
+    price: "$400",
     favoriteSpell: "Avada Kedavra",
     image: "https://ik.imagekit.io/hpapi/voldemort.jpg",
-    description: "El mago más temido de todos los tiempos."
+    description: "The most feared wizard of all time."
   },
   {
+    id: 16,
     name: "Cho Chang",
     house: "Ravenclaw",
-    profession: "Jugadora de Quidditch",
-    price: 120,
+    profession: "Quidditch Player",
+    price: "$120",
     favoriteSpell: "Lumos",
     image: "https://ik.imagekit.io/hpapi/cho.jpg",
-    description: "Encantadora buscadora de Ravenclaw con un corazón sensible."
+    description: "Charming Ravenclaw Seeker with a sensitive heart."
   },
   {
+    id: 17,
     name: "Cedric Diggory",
     house: "Hufflepuff",
-    profession: "Estudiante",
-    price: 140,
+    profession: "Student",
+    price: "$140",
     favoriteSpell: "Accio",
     image: "https://ik.imagekit.io/hpapi/cedric.png",
-    description: "Ejemplo de nobleza y juego limpio, campeón del Torneo de los Tres Magos."
+    description: "Example of nobility and fair play, champion of the Triwizard Tournament."
   },
   {
+    id: 18,
     name: "Molly Weasley",
     house: "Gryffindor",
-    profession: "Ama de casa",
-    price: 90,
+    profession: "Homemaker",
+    price: "$90",
     favoriteSpell: "Mending Charm",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137024/download_ez9adn.jpg",
-    description: "Madre protectora y feroz cuando sus hijos están en peligro."
+    description: "Protective mother and fierce when her children are in danger."
   },
   {
+    id: 19,
     name: "Arthur Weasley",
     house: "Gryffindor",
-    profession: "Empleado del Ministerio de Magia",
-    price: 85,
+    profession: "Ministry of Magic Employee",
+    price: "$85",
     favoriteSpell: "Reparo",
     image: "https://ik.imagekit.io/hpapi/arthur.jpg",
-    description: "Fascinado por los objetos muggles y siempre curioso."
+    description: "Fascinated by Muggle objects and endlessly curious."
   },
   {
+    id: 20,
     name: "Lucius Malfoy",
     house: "Slytherin",
-    profession: "Consejero del Ministerio",
-    price: 200,
+    profession: "Ministry Advisor",
+    price: "$200",
     favoriteSpell: "Imperio",
     image: "https://ik.imagekit.io/hpapi/lucius.jpg",
-    description: "Aristócrata ambicioso y padre de Draco."
+    description: "Ambitious aristocrat and father of Draco."
   },
   {
+    id: 21,
     name: "Dolores Umbridge",
     house: "Slytherin",
-    profession: "Burócrata del Ministerio",
-    price: 75,
+    profession: "Ministry Bureaucrat",
+    price: "$75",
     favoriteSpell: "Incarcerous",
     image: "https://ik.imagekit.io/hpapi/umbridge.jpg",
-    description: "Fanática del orden y el rosa, temida por sus métodos crueles."
+    description: "Fanatic of order and pink, feared for her cruel methods."
   },
   {
+    id: 22,
     name: "Fleur Delacour",
     house: "Beauxbatons",
-    profession: "Embajadora mágica",
-    price: 150,
-    favoriteSpell: "Charm de Encanto Veela",
+    profession: "Magical Ambassador",
+    price: "$150",
+    favoriteSpell: "Veela Charm",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137056/EOGwCTTmMyfW1HbCtxUDMb2q3fJmWJWgpsIB4DWx7bJtjOHi2bOPMCUPB8Mac_gdnL0ETDGvSi5RSMgJHW7IJg_ygye2x.webp",
-    description: "Valiente y encantadora, representante de Francia en el Torneo de los Tres Magos."
+    description: "Brave and enchanting, representative of France in the Triwizard Tournament."
   },
   {
+    id: 23,
     name: "Nymphadora Tonks",
     house: "Hufflepuff",
     profession: "Auror",
-    price: 160,
-    favoriteSpell: "Metamorfosis",
+    price: "$160",
+    favoriteSpell: "Metamorphosis",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137186/Nymphadora_Tonks_fgtkvr.webp",
-    description: "Cambiante y divertida, esposa de Remus Lupin."
+    description: "Playful and ever-changing, wife of Remus Lupin."
   },
   {
+    id: 24,
     name: "Kingsley Shacklebolt",
     house: "Unknown",
-    profession: "Ministro de Magia",
-    price: 170,
+    profession: "Minister of Magic",
+    price: "$170",
     favoriteSpell: "Stupefy",
     image: "https://ik.imagekit.io/hpapi/kingsley.jpg",
-    description: "Carismático líder y defensor de la justicia."
+    description: "Charismatic leader and defender of justice."
   },
   {
+    id: 25,
     name: "Dobby",
     house: "None",
-    profession: "Elfo libre",
-    price: 100,
+    profession: "Free Elf",
+    price: "$100",
     favoriteSpell: "Apparate",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137229/DobbyDH_dhbpmn.webp",
-    description: "Leal y valiente, sacrificó su vida por la libertad."
+    description: "Loyal and brave, sacrificed his life for freedom."
   },
   {
+    id: 26,
     name: "Peter Pettigrew",
     house: "Gryffindor",
-    profession: "Mortífago",
-    price: 60,
+    profession: "Death Eater",
+    price: "$60",
     favoriteSpell: "Animagus Transformation",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137275/Peter_Pettigrew_dsq0bu.webp",
-    description: "Traidor de sus amigos, vivió como rata por años."
+    description: "Betrayed his friends and lived as a rat for years."
   },
   {
+    id: 27,
     name: "Horace Slughorn",
     house: "Slytherin",
-    profession: "Profesor de Pociones",
-    price: 130,
+    profession: "Potions Professor",
+    price: "$130",
     favoriteSpell: "Felix Felicis",
     image: "https://ik.imagekit.io/hpapi/slughorn.JPG",
-    description: "Amo del talento y las conexiones, con debilidad por los alumnos brillantes."
+    description: "Lover of talent and connections, with a soft spot for brilliant students."
   },
   {
+    id: 28,
     name: "Mad-Eye Moody",
     house: "Unknown",
     profession: "Auror",
-    price: 190,
+    price: "$190",
     favoriteSpell: "Constant Vigilance",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137322/iH7sigY5eE_1VJl1PgZgOUto_pvtstZyI0NOeH2icRs_mcni7f.webp",
-    description: "Paranoico pero legendario cazador de magos oscuros."
+    description: "Paranoid but legendary dark wizard hunter."
   },
   {
+    id: 29,
     name: "Gilderoy Lockhart",
     house: "Ravenclaw",
-    profession: "Autor y profesor",
-    price: 95,
+    profession: "Author and Professor",
+    price: "$95",
     favoriteSpell: "Obliviate",
     image: "https://res.cloudinary.com/dic68hupx/image/upload/v1760137365/Gilderoy_Lockhart_promotional_image_COSF_rz2m07.webp",
-    description: "Vanidoso escritor de hazañas robadas."
+    description: "Vain writer of stolen exploits."
   },
   {
+    id: 30,
     name: "Argus Filch",
     house: "None",
-    profession: "Conserje de Hogwarts",
-    price: 55,
+    profession: "Hogwarts Caretaker",
+    price: "$55",
     favoriteSpell: "N/A",
     image: "https://ik.imagekit.io/hpapi/filch.jpg",
-    description: "Amargado y siempre acompañado de su gata, la Sra. Norris."
-  }
-];
+    description: "Bitter and always accompanied by his cat, Mrs. Norris."
+  },
+  ];
+
+
 
 export default harryPotterCharacters;

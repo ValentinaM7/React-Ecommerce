@@ -1,5 +1,5 @@
 import ItemCount from "./ItemCount";
-
+import {Link} from "react-router";
 export default function Item ( props ) {
 
     return <div className="item-card" style={{ border: "solid 1px", width: "250px", margin: "10px", backgroundColor: "gray"}}> 
@@ -8,7 +8,12 @@ export default function Item ( props ) {
         <p> {props.house} </p>
         <p> {props.description} </p>
         <p>{props.price}</p>
-        <button className="btn-bewitched">I'm bewitched</button>
+        <Link to={`/detail/${props.id}`} >
+            <button>See details</button>
+        </Link>
         <ItemCount/>
+        <button className="btn-bewitched">I'm bewitched</button>
+
+
     </div>
 }
