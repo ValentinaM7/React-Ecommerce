@@ -11,8 +11,6 @@ export default function Item ( props ) {
         <Link to={`/detail/${props.id}`} >
             <button>See details</button>
         </Link>
-        <ItemCount/>
-        <button className="btn-bewitched">I'm bewitched</button>
 
 
     </div>
