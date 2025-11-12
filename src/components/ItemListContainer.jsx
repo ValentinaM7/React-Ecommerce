@@ -1,9 +1,9 @@
 // import harryPotterCharacters from "../data/data.js";
- import getData, { getProductsByHouse } from "../data/mockAPIService.js";
  import Item from "./Item";
  import "./itemListContainer.css";
  import { useState, useEffect } from "react";
  import { useParams } from "react-router";
+ import getData, {getCharactersByHouse} from "../data/FirestoreService.js";
 
 function ItemListContainer(props){
     getData(); 
@@ -13,7 +13,7 @@ function ItemListContainer(props){
 
     useEffect(() =>{
         if (houseParam) {
-            getProductsByHouse (houseParam)
+            getCharactersByHouse (houseParam)
             .then ( (data) => setharryPotterCharacters(data))
         }else{
             getData() //simula el fetch

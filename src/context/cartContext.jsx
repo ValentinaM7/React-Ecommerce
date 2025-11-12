@@ -16,7 +16,7 @@ export function CartContextProvider( {children} ){
     }
 
     function clearCart(){
-
+        setCartItems([]);
     }
 
     function cartItemsCount(){
@@ -25,8 +25,14 @@ export function CartContextProvider( {children} ){
         return totalCharacters;
     }
 
+    function getTotalPrice(){
+        let totalPrice = 0;
+        cartItems.forEach( (character) => totalPrice += character.price)
+        return totalPrice;
+    }
+
     return(
-        <cartContext.Provider value={ {cart: cartItems, addItem, cartItemsCount}}>
+        <cartContext.Provider value={ {cart: cartItems, addItem, clearCart, cartItemsCount, getTotalPrice}}>
             {children}
         </cartContext.Provider>
     )

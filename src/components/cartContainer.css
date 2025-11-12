@@ -1,0 +1,12 @@
+#swal2-title{
+    font-size: 20px;
+}
+
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
+    background-color:  #641e1e !important;
+    color: #641e1e !important;
+}
+
+div:where(.swal2-icon).swal2-success .swal2-success-ring{
+    border: #641e1e solid 5px !important;
+}

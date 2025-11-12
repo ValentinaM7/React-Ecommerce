@@ -7,12 +7,14 @@ import { useState, createContext } from "react"
 import { BrowserRouter,Routes, Route} from 'react-router'
 import { CartContextProvider } from './context/cartContext'
 import CartContainer from './components/CartContainer'
+import { exportCharacters } from './data/FirestoreService'
 
 
 function App() {
 
   return (
   <BrowserRouter>
+  <button onClick={exportCharacters}>Let´s start</button>
     <CartContextProvider>
       <NavBar/>
       <div>

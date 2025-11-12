@@ -6,10 +6,10 @@ function CartWidget(){
     const {cartItemsCount} = useContext(cartContext);
 
 
-    return( <div style={{fontSize: "50px"}} >
+    return( <div style={{fontSize: "25px"}} >
         <Link to="/cart">     
         ⌁
-        {cartItemsCount  }
+        {cartItemsCount ()}
         </Link>
     
     </div>)

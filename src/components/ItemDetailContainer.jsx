@@ -1,7 +1,7 @@
-import { getCharacterById } from "../data/mockAPIService"
-import { useEffect, useState } from "react"
-import { useParams } from "react-router"
-import ItemDetail from "./ItemDetail"
+import { getCharacterById } from "../data/FirestoreService";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
+import ItemDetail from "./ItemDetail";
 
 
 function ItemDetailContainer () {

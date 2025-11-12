@@ -3,7 +3,7 @@ import "./itemListContainer.css";
 
 function ItemDetail({ itemData}){
     return(
-        <div className="item-card" style={{ border: "solid 1px", width: "250px", margin: "10px", backgroundColor: "gray",}}> 
+        <div className="item-card" style={{ border: "solid 1px", width: "250px", margin: "30px", backgroundColor: "gray",}}> 
 
             {itemData.loading
                 ? <img src="https://res.cloudinary.com/dic68hupx/image/upload/v1760428814/aa013e2813804c05a4a6f5752290a61d_kfuq9k.jpg" className="loadingImage"></img>

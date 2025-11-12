@@ -14,6 +14,7 @@ function NavBar () {
                 <Link to="/house/Ravenclaw" style={{color: '#c39a1c', textDecoration: 'none'}}>Ravenclaw</Link>
                 <Link to="/house/Hufflepuff" style={{color: '#c39a1c', textDecoration: 'none'}}>Hufflepuff</Link>
                 <Link to="/house/None" style={{color: '#c39a1c', textDecoration: 'none'}}>Other characters</Link>
+                
             </div>
             <CartWidget />
         </nav>
