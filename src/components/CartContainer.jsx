@@ -3,15 +3,19 @@ import cartContext from "../context/cartContext";
 import { createBuyOrder } from "../data/FirestoreService";
 import Swal from "sweetalert2";
 import "./cartContainer.css"
+import CheckoutForm from "./checkoutForm";
 
 function CartContainer() {
-  const { cart, clearCart } = useContext(cartContext);
+  const { cart, clearCart, totalPrice } = useContext(cartContext);
+  const [orderCreated, setOrderCreated] = useState(false);
+  
 
-  async function handleCheckOut(){
+
+  async function handleCheckOut(formData){
     const orderData={
-      buyer: {name: "Greg", email: "jaknlak@yahoo.com", phone: 1234},
+      buyer: formData,
       cart,
-      total: 333,
+      total: totalPrice(),
       date: new Date (),
     }
 
@@ -23,9 +27,17 @@ function CartContainer() {
           title: `Your order is confirmed. Your ID is ${response.id}`,
           showConfirmButton: false,
           timer: 3000,
-}); clearCart()
-    }
-  }
+    })} ;
+    setOrderCreated(response.id)
+    clearCart();
+   }
+    if(orderCreated){
+    return(
+    <section>
+      <h2>Thanks for adopting these characters</h2>
+      <p>This is the Id: {orderCreated}</p>
+    </section>)
+  } 
 
   return (
     <section>
@@ -36,15 +48,16 @@ function CartContainer() {
             <img width="200" src={character.image} alt="" />
             <p> {character.house} </p>
             <p> Quantity: {character.quantity} </p>
+            <p> Price: $ {character.price}</p>
             </div>) }
       </div>
       <hr/>
       <div>
-        <p>Total price: 999</p>
+        <p>Total price: ${totalPrice()}</p>
       </div>
-        <button onClick={handleCheckOut}>I want them all!</button>
-    </section>
-  );
+      <CheckoutForm handleCheckOut= {handleCheckOut}/>
+    
+    </section>)
+  }
 
-}
 export default CartContainer;

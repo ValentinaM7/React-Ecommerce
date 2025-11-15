@@ -1,3 +1,4 @@
+//Not functional - Database in Firebase
 const harryPotterCharacters = 
  [
   {

@@ -6,8 +6,6 @@
  import getData, {getCharactersByHouse} from "../data/FirestoreService.js";
 
 function ItemListContainer(props){
-    getData(); 
-
     const [harryPotterCharacters, setharryPotterCharacters] = useState([])
     const {houseParam} = useParams();
 
@@ -16,10 +14,10 @@ function ItemListContainer(props){
             getCharactersByHouse (houseParam)
             .then ( (data) => setharryPotterCharacters(data))
         }else{
-            getData() //simula el fetch
-        .then( (data) => {
-        console.log("datos recibidos", data)
-        setharryPotterCharacters(data)})
+            getData()
+            .then( (data) => {
+            console.log("datos recibidos", data)
+            setharryPotterCharacters(data)})
         }
     }, [houseParam])
     

@@ -7,12 +7,12 @@ import harryPotterCharacters from "./data";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDmETV6gBYfF5crddyZ09rJL09WbKalGjg",
-  authDomain: "basededatoshp-f3da5.firebaseapp.com",
-  projectId: "basededatoshp-f3da5",
-  storageBucket: "basededatoshp-f3da5.firebasestorage.app",
+  apiKey: import.meta.env.VITE_FS_APIKEY,
+  authDomain: import.meta.env.VITE_FS_AUTH,
+  projectId: import.meta.env.VITE_FS_APPID,
+  storageBucket: import.meta.env.VITE_FS_BUCKET,
   messagingSenderId: "809502367596",
-  appId: "1:809502367596:web:33c47a87a69be528ed5d49"
+  appId: import.meta.env.VITE_FS_APPID,
 };
 
 

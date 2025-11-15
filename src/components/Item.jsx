@@ -7,7 +7,7 @@ export default function Item ( props ) {
         <img width= "200" src = {props.image} alt="" />
         <p> {props.house} </p>
         <p> {props.description} </p>
-        <p>{props.price}</p>
+        <p>$ {props.price}</p>
         <Link to={`/detail/${props.id}`} >
             <button>See details</button>
         </Link>

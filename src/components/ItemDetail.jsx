@@ -10,7 +10,7 @@ function ItemDetail({ itemData}){
                 : <div>
                     <h4>{itemData.name}</h4>
                     <img width= "200" src = {itemData.image} alt="" />
-                    <p> Price: {itemData.price} </p>
+                    <p> Price: $ {itemData.price} </p>
                     <p>Description: {itemData.description}</p>
                     <p>Profession: {itemData.profession}</p>
                     <ItemCount character={itemData}/>

@@ -14,7 +14,7 @@ function App() {
 
   return (
   <BrowserRouter>
-  <button onClick={exportCharacters}>Let´s start</button>
+ 
     <CartContextProvider>
       <NavBar/>
       <div>
